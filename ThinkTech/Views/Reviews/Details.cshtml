@@ -1,0 +1,50 @@
+﻿@model ThinkTech.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Review</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.TechnologyDevice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.TechnologyDevice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConsumerRatingNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConsumerRatingNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FunctionalityImprovements)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FunctionalityImprovements)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConsumerReport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConsumerReport)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
